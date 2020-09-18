@@ -1,0 +1,27 @@
+{
+  "name": "@kooyal/github-config",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kooyal/.github.git"
+  },
+  "author": "Munjal A Patel <munjalapatel@kooyal.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.2.5",
+    "validate-commit-email": "^1.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "validate-commit-email @kooyal.com$"
+    }
+  }
+}
